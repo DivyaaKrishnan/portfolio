@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya Dharsini M - Web Designer Portfolio</title>
+  <style>
+    * {box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    body {background: #f0f2f5; color: #333; line-height: 1.6;}
+    header {background: #1e1e2f; color: #fff; padding: 30px 20px; text-align: center;}
+    header h1 {font-size: 2.5rem;}
+    header h2 {font-size: 1.3rem; color: #ffcc66; margin-top: 5px;}
+    nav {margin-top: 15px;}
+    nav button {margin: 5px; padding: 12px 25px; border: none; border-radius: 8px; background: #ff6600; color: #fff; cursor: pointer; transition: 0.3s;}
+    nav button:hover {background: #e65c00; transform: scale(1.05);}
+    main {max-width: 900px; margin: 30px auto; padding: 0 20px;}
+    section {background: #fff; padding: 25px 20px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: none; opacity: 0; transform: translateY(20px); transition: 0.6s;}
+    section.active {display: block; opacity: 1; transform: translateY(0);}
+    h2 {color: #ff6600; margin-bottom: 15px;}
+    h3 {color: #333; margin-bottom: 10px;}
+    p, li {margin-bottom: 10px;}
+    ul {list-style: disc; padding-left: 20px;}
+    ul li {border-bottom: none; padding: 5px 0;}
+    a {color: #333; text-decoration: none; font-weight: bold;}
+    a:hover {color: #ff6600;}
+    table {width: 100%; border-collapse: collapse; margin-bottom: 20px;}
+    th, td {border: 1px solid #ddd; padding: 10px; text-align: left;}
+    th {background-color: #ff6600; color: #fff;}
+    .contact-info p, .skills ul {margin-bottom: 10px;}
+    footer {background: #1e1e2f; color: #fff; text-align: center; padding: 20px; margin-top: 40px;}
+    @media(max-width:600px){nav button {width: 100%; margin: 5px 0;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Divya Dharsini M</h1>
+  <h2>Web Designer</h2>
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+</header>
+
+<main>
+  <section id="about" class="active">
+    <h2>Objective</h2>
+    <p>Creative and detail-oriented Web Designer with a strong foundation in HTML, CSS, JavaScript, and MySQL. Seeking an entry-level position to apply technical skills and design principles in developing responsive, user-centric websites. Committed to continuous learning and contributing to innovative web solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Degree</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Bachelor of Computer Application</td>
+        <td>Hindusthan College of Arts And Science, Coimbatore</td>
+        <td>2018-2021</td>
+        <td>Relevant Coursework: Programming in C, Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, 
+		Web Technologies, Software Engineering, Object-Oriented Programming (Java/Python)<br>GPA: 8.2</td>
+      </tr>
+      <tr>
+        <td>Python Full Stack Development</td>
+        <td>Accord Info Tech,Chennai</td>
+        <td>2025</td>
+        <td>Completed full stack web development using Python, Flask/Django, HTML, CSS, JavaScript, and MySQL</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="https://socialcommerce.com" target="_blank">Social Commerce Platform</a> – Designed and built a platform where
+		vendors upload product catalogs and resellers can select items, add margins, and share product links via social media. 
+		Implemented customer browsing, cart/checkout process, order tracking, and dashboards for vendors and resellers. Ensured
+		mobile responsiveness,search/filter functionality, and admin panel for managing users and orders.
+      </li>
+      <li>
+        <a href="https://busticketbooking.com" target="_blank">Bus & Ticket Booking System</a> – Created a bus ticket booking 
+		interface enabling users to search routes, select seats, and complete a mock checkout. 
+		Included user authentication, booking history, cancellation flow, and admin dashboard to manage routes, buses, 
+		and schedules. Focused on accessibility, error handling, and responsive design.
+      </li>
+      <li>
+        <a href="https://portfolio-casestudy.com" target="_blank">Personal Portfolio</a> – Developed a modern portfolio,
+		designed it.Built features like like contact form, downloadable CV.
+      </li>
+    </ul>
+  </section>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><b>HTML:</b> Semantic markup, forms, tables, layout structuring</li>
+      <li><b>CSS:</b> Flexbox, Grid, responsive design, animations, media queries</li>
+      <li><b>JavaScript:</b> DOM manipulation, events, basic algorithms, form validation</li>
+      <li><b>Python:</b> Object-Oriented Programming, scripting,
+	  backend web development (Flask/Django), data handling</li>
+	  <li><b>MySQL:</b> Table creation, queries, data management for web applications</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:divyadharsinimurugesan@gmail.com">divyadharsinimurugesan@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919791774807">+91 9791774807</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-dharsini-m-6b8155388/" target="_blank">linkedin.com/in/divya-dharsini-m-6b8155388</a></p>
+      <p>GitHub: <a href="https://github.com/DivyaaKrishnan" target="_blank">github.com/DivyaaKrishnan</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Divya Dharsini M | All Rights Reserved</p>
+</footer>
+F
+<script>
+  function showSection(sectionId) {
+    let sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(sectionId).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
